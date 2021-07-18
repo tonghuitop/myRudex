@@ -1,5 +1,6 @@
 import { createStore, combineReducers, applyMiddleware } from './redux'
 import logger from './logger'
+import logger2 from './logo2'
 
 const initState = {
   milk: 0
@@ -34,7 +35,7 @@ function riceReducer (state = initRiceState, action: any) {
 
 const reducer = combineReducers({milk: milkReducer, rice: riceReducer})
 
-let store = createStore(reducer, applyMiddleware(logger))
+let store = createStore(reducer, applyMiddleware(logger, logger2))
 
 store.subscribe(() => console.log(store.getState()))
 

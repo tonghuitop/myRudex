@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "./node_modules/.bin/tsc && node ./dist/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "./node_modules/.bin/tsc && node ./dist/index.js"
   },
   "author": "",
   "license": "ISC",
